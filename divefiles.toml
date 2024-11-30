@@ -1,0 +1,10 @@
+[[profile]]
+name = "shared"
+
+[[profile]]
+name = "home"
+extends = "shared"
+
+[[profile]]
+name = "work"
+extends = "shared"
