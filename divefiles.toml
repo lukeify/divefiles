@@ -1,10 +1,7 @@
-[[profile]]
-name = "shared"
+[profile.shared]
 
-[[profile]]
-name = "home"
+[profile.home]
 extends = "shared"
 
-[[profile]]
-name = "work"
+[profile.work]
 extends = "shared"
