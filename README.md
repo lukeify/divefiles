@@ -18,3 +18,10 @@ Configuration of your divefiles is managed by `divefiles.toml`, which is expecte
 A `divefile` repository can contain any number of "profiles", which define how your machine is configured.
 For example, you may have a "work" profile and a "home" profile with differing software installed.
 However, there's also a high likelihood these profiles contain a large amount of duplication—thus, profiles can inherit from other profiles—defined by a simple, rooted directed graph structure, where the leaves are the targetable profiles that can be directly installed.
+
+To configure your profiles, define each as an array element in `divefiles.toml`. Each profile has a name which should match with a directory in the root of the repository.
+The relationship between profiles is configured via an `extends` property.
+
+### Pools
+
+Each profile consists of "pools", which are individual files inside a profile that configure a specific part of your system.
