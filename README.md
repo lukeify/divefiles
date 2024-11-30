@@ -24,4 +24,8 @@ The relationship between profiles is configured via an `extends` property.
 
 ### Pools
 
-Each profile consists of "pools", which are individual files inside a profile that configure a specific part of your system.
+Each profile consists of "pools", which are individual components of a profile that configure a specific part of your system.
+
+#### Dots
+
+One of the most common pools is **dots**. This is a directory located inside each profile that contains files that will be copied over to the user's home directory automatically by `diveboard-cli`. This is the best place to store `.zshrc`, `.ssh/config`, `.gitconfig`, etc.
